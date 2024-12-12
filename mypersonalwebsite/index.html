@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<script type="text/javascript">
+    // declare time zone formatting
+    let options = {
+        timeZone: 'TR/UTC',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    },
+    formatter = new Intl.DateTimeFormat([], options);
+
+    // set time
+    setInterval(
+        () => {
+            document.querySelector("#time").innerText = formatter.format(new Date());
+        }
+    , 1000)
+</script>
+</head>
+
+<div class="center-container">
+    <div class="content">
+        <h1>Mehmetcan Aydoğan</h1>
+        <p>Siber Güvenlik Öğrencisi<br><div class="clock">
+            <span id=timezone>
+            <i>
+                <a href="//24timezones.com/Ankara/time" style="text-decoration: none" class="clock24" id="tz24-1733993848-c119-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMCIsInNob3dzZWNvbmRzIjoiMSIsInNob3d0aW1lem9uZSI6IjEiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="time now Ankara" target="_blank" rel="nofollow">TIME IN ANKARA</a>
+                <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+            </i>
+            </span>
+            </div></p>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li><br>
+                    <li><a href="#">About</a></li><br>
+                    <li><a href="#">Contact</a></li><br>
+                </ul>
+            </nav>
+    </div>
+</div>
+
+</body>
+</html>
